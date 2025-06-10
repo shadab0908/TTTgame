@@ -57,7 +57,7 @@ body {
 
 .box{
     height: 18vmin;
-    width: 18vh;
+    width: 18vmin;
     color: #ff6b6b;
     font-size: 6vh;
     background-color: #44475a;
@@ -152,4 +152,28 @@ body {
 .winMsg {
   letter-spacing: 2px;
   font-weight: 700;
+}
+
+@media (max-width:600px){
+    .game {
+        height: 80vmin;
+        width: 80vmin;
+        gap: 2.5vmin;
+    }
+
+    .box {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 8vmin;
+    }
+
+    .winMsg {
+        font-size: 8vmin;
+        padding: 2rem;
+    }
+
+    #resetBtn, #newBtn {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
 }
