@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    
+}
+body {
+    background: linear-gradient(-45deg, #ea0b9f, #3904f8, #4040b6, #ea0606);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #f8f8ef;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* body{
+   background-color: #00000a;
+    color: #f8f8ef;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 2rem;
+} */
+.container{
+    color: #ff0651fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    background-color: #292939;
+    border:  1vmin solid red;
+    border-radius: 5vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2vmin;
+    padding: 2%;
+     box-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.1);
+
+    
+    
+}
+
+
+.box{
+    height: 18vmin;
+    width: 18vh;
+    color: #ff6b6b;
+    font-size: 6vh;
+    background-color: #44475a;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 0 0.5rem #ff6b6b;
+
+
+}
+
+.box:hover {
+    background-color: #5a5f73;
+    transform: scale(1.05);
+}
+
+.box.o {
+    color: #6bcfff;
+}
+#resetBtn {
+    margin-top: 2rem;
+    background-color: #50fa7b;
+    color: #1e1e2f;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 0 0 1rem #50fa7b;
+    transition: background-color 0.2s ease;
+}
+
+#resetBtn:hover {
+    background-color: #ff1c02fa;
+    box-shadow: 0 0 1rem #f26806;
+}
+
+#newBtn{
+    margin-top: 2rem;
+    background-color: #50fa7b;
+    color: #1e1e2f;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 0 0 1rem #0f0f0f;
+
+
+}
+
+.winMsg{
+    height: 100vmin;
+    color: #e01111;
+    font-size: 10vmin;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+.box:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), 0 0 10px #4facfe;
+}
+
+
+
+#resetBtn:hover,
+#newBtn:hover {
+  box-shadow: 0 0 10px #00c9a7, 0 0 20px #00c9a7;
+}
+
+
+.winMsg {
+  animation: winnerAnim 1s ease-out;
+}
+
+@keyframes winnerAnim {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.winMsg {
+  letter-spacing: 2px;
+  font-weight: 700;
+}
